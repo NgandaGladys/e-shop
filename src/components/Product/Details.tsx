@@ -10,8 +10,9 @@ import { useState } from "react";
 import Button from "@/components/Button.tsx";
 import DropDown from "@/components/DropDown.tsx";
 import CartItems from "@/components/cart/CartItems.tsx";
+import Product from "@/pages/Product";
 
-const Details = ({ product }) => {
+const Details = ({ product }: { product: Product }) => {
   const [productImage, setProductImage] = useState(product.image);
 
   const handleProductImage = (img: string) => {

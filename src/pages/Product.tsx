@@ -7,6 +7,7 @@ import Sales from "@/components/Home/Sales.tsx";
 import {products} from "@/assets/data/data.tsx";
 
 interface Product {
+    wishlist: any;
     id: string;
     name: string;
     price: string;
